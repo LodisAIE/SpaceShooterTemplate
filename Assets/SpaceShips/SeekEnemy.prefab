@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &1215676891988161404
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3605617258735112483, guid: de3797926ab5619469b3e4399ad49483, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3605617258735112483, guid: de3797926ab5619469b3e4399ad49483, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 3605617258735112483, guid: de3797926ab5619469b3e4399ad49483, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3605617258735112483, guid: de3797926ab5619469b3e4399ad49483, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.1596333
+      objectReference: {fileID: 0}
+    - target: {fileID: 3605617258735112483, guid: de3797926ab5619469b3e4399ad49483, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3605617258735112483, guid: de3797926ab5619469b3e4399ad49483, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3605617258735112483, guid: de3797926ab5619469b3e4399ad49483, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3605617258735112483, guid: de3797926ab5619469b3e4399ad49483, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3605617258735112483, guid: de3797926ab5619469b3e4399ad49483, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3605617258735112483, guid: de3797926ab5619469b3e4399ad49483, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3605617258735112483, guid: de3797926ab5619469b3e4399ad49483, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3605617258735112505, guid: de3797926ab5619469b3e4399ad49483, type: 3}
+      propertyPath: m_Name
+      value: SeekEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3605617258735112505, guid: de3797926ab5619469b3e4399ad49483, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3605617258735112510, guid: de3797926ab5619469b3e4399ad49483, type: 3}
+      propertyPath: _movementSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: de3797926ab5619469b3e4399ad49483, type: 3}
+--- !u!1 &2510557205706990149 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3605617258735112505, guid: de3797926ab5619469b3e4399ad49483, type: 3}
+  m_PrefabInstance: {fileID: 1215676891988161404}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1239329782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2510557205706990149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18a793412626e884cbf9aeca81ab8311, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _damage: 1
+--- !u!114 &1239329788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2510557205706990149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33d5f99409a674342b565bc0043eadc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 5
+  _onDeath:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2510557205706990149}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
