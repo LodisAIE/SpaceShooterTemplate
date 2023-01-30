@@ -11,6 +11,8 @@ public class ProjectileBehaviour : MonoBehaviour
     private float _lifeTime;
     [SerializeField]
     private bool _destroyOnHit;
+    [SerializeField]
+    private GameObject _explosion;
     private Rigidbody _rigidbody;
 
     
@@ -51,6 +53,13 @@ public class ProjectileBehaviour : MonoBehaviour
         health.TakeDamage(_damage);
 
         if (_destroyOnHit)
+        {
+            GameObject explosionInstance = Instantiate(_explosion, transform.position, _explosion.transform.rotation);
+
+            explosionInstance.transform.localScale /= 2;
+
+            Destroy(explosionInstance, 0.2f);
             Destroy(gameObject);
+        }
     }
 }

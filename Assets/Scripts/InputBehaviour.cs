@@ -6,7 +6,9 @@ public class InputBehaviour : MonoBehaviour
 {
     private SpaceshipMovementBehaviour _movementBehaviour;
     [SerializeField]
-    private ProjectileSpawnerBehaviour _spawnerBehaviour;
+    private ProjectileSpawnerBehaviour _spawnerBehaviourLeft;
+    [SerializeField]
+    private ProjectileSpawnerBehaviour _spawnerBehaviourRight;
 
     private static GameObject _player;
 
@@ -25,6 +27,9 @@ public class InputBehaviour : MonoBehaviour
         _movementBehaviour.MoveDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
 
         if (Input.GetButtonDown("Fire1"))
-            _spawnerBehaviour.FireProjectile();
+        {
+            _spawnerBehaviourLeft.FireProjectile();
+            _spawnerBehaviourRight.FireProjectile();
+        }
     }
 }

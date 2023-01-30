@@ -9,6 +9,8 @@ public class HealthBehaviour : MonoBehaviour
     private float _maxHealth;
     private float _health;
     [SerializeField]
+    private GameObject _explosion;
+    [SerializeField]
     private UnityEvent _onDeath;
 
     public float Health { get => _health; private set => _health = value; }
@@ -27,6 +29,11 @@ public class HealthBehaviour : MonoBehaviour
         {
             _health = 0;
             _onDeath?.Invoke();
+
+            GameObject explosionInstance = Instantiate(_explosion, transform.position, _explosion.transform.rotation);
+
+            ScreenShakeBehaviour.ShakeScreen();
+            Destroy(explosionInstance, 1f);
             Destroy(gameObject);
         }
     }
