@@ -27,6 +27,7 @@ public class HealthBehaviour : MonoBehaviour
         {
             _health = 0;
             _onDeath?.Invoke();
+            Destroy(gameObject);
         }
     }
 }

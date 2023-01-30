@@ -99,6 +99,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _movementSpeed: 12
+  _xMin: 10
+  _xMax: 10
+  _yMin: 10
+  _yMax: 10
 --- !u!65 &3605617258735112504
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -55,6 +55,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerSpaceship
       objectReference: {fileID: 0}
+    - target: {fileID: 3605617258735112510, guid: de3797926ab5619469b3e4399ad49483, type: 3}
+      propertyPath: _xMax
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3605617258735112510, guid: de3797926ab5619469b3e4399ad49483, type: 3}
+      propertyPath: _xMin
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3605617258735112510, guid: de3797926ab5619469b3e4399ad49483, type: 3}
+      propertyPath: _yMax
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3605617258735112510, guid: de3797926ab5619469b3e4399ad49483, type: 3}
+      propertyPath: _yMin
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de3797926ab5619469b3e4399ad49483, type: 3}
 --- !u!114 &3465754925430497283 stripped

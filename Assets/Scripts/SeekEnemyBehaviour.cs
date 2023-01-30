@@ -15,12 +15,18 @@ public class SeekEnemyBehaviour : EnemyBehaviour
 
     private void Start()
     {
+        if (!InputBehaviour.Player)
+            return;
+
         _target = InputBehaviour.Player.transform;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (!_target)
+            return;
+
         _movementBehaviour.MoveDirection = (_target.position - transform.position).normalized;
 
         if (_movementBehaviour.MoveDirection.magnitude > 0)
